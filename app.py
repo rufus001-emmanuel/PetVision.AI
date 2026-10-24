@@ -7,8 +7,10 @@ import tensorflow as tf
 from PIL import Image, UnidentifiedImageError
 
 IMG_SIZE = 160
-MODEL_PATH = Path(_file_).with_name("model.keras")
-LABELS_PATH = Path(_file_).with_name("labels.json")
+MODEL_PATH =
+Path(__file__).with_name("model.keras")
+LABELS_PATH =
+Path(__file__).with_name("labels.json")
 
 st.set_page_config(
     page_title="PetVision AI",
