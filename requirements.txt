@@ -2,3 +2,5 @@ streamlit
 tensorflow
 numpy
 pillow
+pandas
+ultralytics
