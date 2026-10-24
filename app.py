@@ -3,12 +3,16 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
+
 IMG_SIZE = 160
+
 @st.cache_resource
 def load_model():
-return tf.keras.models.load_model("model.keras")
+    return tf.keras.models.load_model("model.keras")
+  
 with open("labels.json", "r", encoding="utf-8") as f:
-LABELS = json.load(f)
+    LABELS = json.load(f)
+  
 st.set_page_config(page_title="PetVision AI", page_icon="■")
 st.title("■ PetVision AI")
 st.write("Upload a picture to classify it as cat, dog, or neither.")
